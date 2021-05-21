@@ -23,9 +23,14 @@ namespace cube_simulator
             while(true)
             {
                 this.display();
-                foreach (Move move in this.cube_display.get_moves())
+                try
                 {
-                    this.cube.move(move);
+                    foreach (Move move in this.cube_display.get_moves())
+                    {
+                        this.cube.move(move);
+                    }
+                } catch (InvalidMoveException) {
+                    Console.WriteLine("Invalid move");
                 }
             }
         }
