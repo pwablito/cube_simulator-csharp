@@ -1,0 +1,13 @@
+﻿using System;
+namespace cube_simulator {
+    public class GUICubeDisplay : CubeDisplay
+    {
+        public GUICubeDisplay()
+        {
+        }
+        public void update(Cube cube)
+        {
+
+        }
+    }
+}
